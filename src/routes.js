@@ -6,6 +6,7 @@ import WorkingTime from "./components/WorkingTime";
 import WorkingTimes from "./components/WorkingTimes";
 import ClockManager from "./components/ClockManager";
 import ChartManager from "./components/ChartManager";
+import ListUser from "./components/ListUser"
 
 Vue.use(VueRouter);
 
@@ -29,6 +30,11 @@ let router = new VueRouter({
             name: 'workingtime'
         },
         {
+            path: '/listUser',
+            component: ListUser,
+            name: 'listUser'
+        },
+        {
             path: '/workingTimes/:userid',
             component: WorkingTimes,
             name: 'workingtimes'
@@ -47,6 +53,7 @@ let router = new VueRouter({
             path: '*',
             redirect: '/'
         }
+        
     ]
 });
 

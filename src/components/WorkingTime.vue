@@ -35,7 +35,7 @@
                         </datalist>
 
 
-                        <button class="btn-success ol-sm-2"> save</button>
+                        <button class="btn btn-primary" > save</button>
                     </form>
                 </div>
                 <table class="table">
@@ -55,9 +55,9 @@
                     <tbody>
                     <tr>
                         <td>
-                            <button class="btn-success ol-sm-2"> edit</button>
+                            <button class="btn btn-primary" > edit</button>
 
-                            <button class="btn-danger ol-sm-2"> delete</button>
+                            <button class="btn btn-danger "> delete</button>
                         </td>
                         <td>Mark</td>
                         <td>Otto</td>
@@ -68,9 +68,9 @@
                     </tr>
                     <tr>
                         <td>
-                            <button class="btn-success ol-sm-2"> edit</button>
+                            <button class="btn btn-primary" > edit</button>
 
-                            <button class="btn-danger ol-sm-2"> delete</button>
+                           <button class="btn btn-danger "> delete</button>
                         </td>
                         <td>Jacob</td>
                         <td>Thornton</td>
@@ -80,9 +80,9 @@
                     </tr>
                     <tr>
                         <td>
-                            <button class="btn-success ol-sm-2"> edit</button>
+                            <button class="btn btn-primary" > edit</button>
 
-                            <button class="btn-danger ol-sm-2"> delete</button>
+                           <button class="btn btn-danger "> delete</button>
                         </td>
                         <td>Larry</td>
                         <td>the Bird</td>
