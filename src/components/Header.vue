@@ -1,38 +1,30 @@
 <template>
-
-
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-
-        <a class="navbar-brand">Gotham</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <router-link :to="{ name: 'home' }" class="navbar-brand">GothamProject</router-link>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse text-white-50" id="navbarsExampleDefault">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link">Home <span class="sr-only">(current)</span></a>
-
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <router-link :to="{ name: 'user' }" class="nav-link">Current User</router-link>
                 </li>
-                <a class="nav-link text-muted font-weight-bold"  > </a>
+                <li class="nav-item">
+                    <router-link :to="{ name: 'workingtimes', params: { userid: 12 } }" class="nav-link">Working Times</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="{ name: 'workingtime', params: { userid: 12 } }" class="nav-link">Working Time</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="{ name: 'clockmanager', params: { username: 'twitterpowwaaa' } }" class="nav-link">Clock Manager</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link :to="{ name: 'chartmanager', params: { userid: 12 } }" class="nav-link">Chart Manager</router-link>
+                </li>
             </ul>
-
-            <form class="form-inline my-2 my-lg-0" role="form" method="POST">
-                <router-link to="{name :'WorkingTime'}" class="nav-link text-muted font-weight-bold">WorkingTime </router-link>
-                <router-link to="{name :'WorkingTimes'}" class="nav-link text-muted font-weight-bold">WorkingTimes</router-link>
-
-                <input class="form-control mr-sm-2" type="text" placeholder="Recherche" id="search1" name="search"
-                       aria-label="Search">
-
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
-            </form>
-
         </div>
-
-
     </nav>
-
-
 </template>
 
 <script>
@@ -43,5 +35,5 @@
 </script>
 
 <style scoped>
-@import "https://mdbootstrap.com/wp-content/themes/mdbootstrap4/css/compiled-4.7.4.min.css";
+
 </style>
