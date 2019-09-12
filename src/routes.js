@@ -41,7 +41,7 @@ let router = new VueRouter({
         {
             path: '/chartManager/:userid',
             component: ChartManager,
-            name: 'chartManager'
+            name: 'chartmanager'
         },
         {
             path: '*',
