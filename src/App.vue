@@ -1,19 +1,21 @@
 <template>
     <div id="app">
         <Header></Header>
-        <WorkingTime></WorkingTime>
+        <!--<WorkingTime></WorkingTime>-->
+        <ClockManager></ClockManager>
     </div>
 </template>
 
 <script>
 
     import WorkingTime from './components/WorkingTime'
+    import ClockManager from './components/ClockManager'
     import Header from './components/Header'
 
     export default {
         name: 'app',
         components: {
-           WorkingTime,Header
+           WorkingTime,Header,ClockManager
         }
     }
 </script>
